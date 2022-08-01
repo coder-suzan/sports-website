@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+
+
+<section class="sport-section">
+    <div class="page-width">
+       <div class="sportSectionContent gap-20 sport-inner items-left">
+          <div class="leftPart">
+             <div class="timerPart">
+                <h2>The exchange window<span id="timeOut"> is open</span></h2>
+                <div id="showTime">
+                    <div id="showTime" class="hours"></div>
+                    <div id="showTime" class="minutes"></div>
+                    <div id="showTime" class="seconds"></div>
+                </div>
+            
+             </div>
+             <div class="inputPart">
+                <form action="#">
+                    <div>
+                       <label class="customLabel" for="singleSeason">Single use during the season:</label>
+                       <div class="inputTwoBtn">
+                          <button disabled>Exchange 11</button>
+                          <button>Single use during the season</button>
+                       </div>
+                    </div><hr>
+
+                    <div>
+                        <label class="customLabel" for="captain">Captain 
+                        </label>
+                        <select class="captainSelect" name="captain" id="captain" disabled>
+                            <option value="choose">Choose</option>
+                            <option value="select1">Captain 1</option>
+                        </select>
+                    </div><hr>
+
+                    <div class="comBtnPart">
+                        <button class="comPlayerBtn">Comparing players</button>
+                        <h2>Selection of players for the team</h2>
+                    </div><hr>
+
+                    <div class="groupTwoBtn">
+                        <div>
+                            <label class="customLabel" for="showBy">Show By</label><br>
+                          <select name="showBy" id="showBy">
+                            <option value="price">Price</option>
+                            <option value="points">Points</option>
+                            <option value="there">There</option>
+                          </select>
+                        </div>
+
+                        <div>
+                            <label class="customLabel" for="group">Group</label><br>
+                          <select name="group" id="group">
+                            <option value="choose">Choose</option>
+                            <option value="select">Select</option>
+                            <option value="there">There</option>
+                          </select>
+                        </div>
+                    </div><hr>
+
+                    <div class="fiveDiv">
+                        <div>
+                           <input type="checkbox" name="attack" id="attack">
+                           <label class="customLabel" for="attack">Attack</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="link" id="link">
+                            <label class="customLabel" for="link">Link</label>
+                         </div>
+                         <div>
+                            <input type="checkbox" name="protection" id="protection">
+                            <label class="customLabel" for="protection">Protection</label>
+                         </div>
+                         <div>
+                            <input type="checkbox" name="goalKeeper" id="goalKeeper">
+                            <label class="customLabel" for="goalKeeper">GoalKeeper</label>
+                         </div>
+                         <div>
+                            <input type="checkbox" name="everything" id="everything">
+                            <label class="customLabel" for="everything">Everything</label>
+                         </div>
+                    </div><hr>
+
+                    <div class="priceRangeSlider">
+                        <label class="customLabel" for="priceSlider">By price range (millions):</label>
+                        <!-- we can also set a default value for webrouk-custom-range div like from="300" to="700" -->
+                        <webrouk-custom-range start="0" end="15" suffix-char="M">
+                            <!-- This input will receive the value from the component (required) -->
+                            <input id="priceSliderInput" type="hidden">
+                        </webrouk-custom-range>
+                    </div>
+
+                </form>
+            <div class="sliderTable">
+                <table class="roundTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Points</th>
+                            <th>Price</th>
+                            <th>Goal Keeper</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="check" id="check">
+                            </td>
+                            <td>0</td>
+                            <td>9.0M</td>
+                            <td>
+                                <a href="#">Josh Cohen (M. Haifa)</a>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            </div>
+          </div>
+          <div class="sport-players gap-30 rightPart">
+            <div class="topPart">
+                <div class="topPartInput">
+                    <select class="topInputDesign" name="fanSelect" id="fanSelect">
+                        <option value="fanOf">The team I'm a fan of</option>
+                        <option value="other">Other</option>
+                        <option value="Beitar Jerusalem">Beitar Jerusalem</option>
+                    </select>
+                    <input class="topInputDesign" type="text" name="coachName" placeholder="Coach's name" id="coachName">
+                    <input class="topInputDesign" type="text" name="groupName" placeholder="Group name - minimum 3 character" id="groupName">
+                </div>
+
+                <div class="playerBudget">
+                    <div class="flex jus-content-left gap-20">
+                       <div class="playerBudgetContent">
+                         <h2>100.0M</h2>
+                         <span>Remaining Budget</span>
+                       </div>
+                       <div class="playerBudgetContent">
+                        <h2>100.0M</h2>
+                        <span>Budget</span>
+                      </div>
+                    </div>
+
+                    <div class="playerFiveInfo">
+                        <div>
+                            <h3>0/11</h3>
+                            <span>Composition</span>
+                        </div>
+                        <div>
+                            <h3>0</h3>
+                            <span>Attack</span>
+                        </div>
+                        <div>
+                            <h3>0</h3>
+                            <span>Link</span>
+                        </div>
+                        <div>
+                            <h3>0</h3>
+                            <span>Protection</span>
+                        </div>
+                        <div>
+                            <h3>0</h3>
+                            <span>Goal Keeper</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sport-player-team">
+                <div class="sport-bg">
+                    <div class="grid po-div">
+                       <div class="player">
+                           <h2>
+                               PO
+                           </h2>
+                       </div>
+                       <div id="poPlayer" class="playerView">
+                           <div class="playerImgContainer">
+                               <img class="playerImg" src="assets/imgs/po.svg" alt="">
+                           </div>
+                           <button onclick="poCloseFunction();" id="poClose" class="playerCloseBtn">X</button>
+                           <span class="goalKeeper">Goal Keeper</span>
+                           <span class="playerName">Kane</span>
+                       </div>
+                    </div>
+                    <div class="grid cc-div">
+                       <div class="player">
+                           <h2>
+                               mf
+                           </h2>
+                           <div id="mf1Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/mf-1.svg" alt="">
+                               </div>
+                               <button onclick="mf1CloseFunction();" id="mf1Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Protection</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                       <div class="player">
+                           <h2>
+                               mf
+                           </h2>
+                           <div id="mf2Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/mf-2.svg" alt="">
+                               </div>
+                               <button onclick="mf2CloseFunction();" id="mf2Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Protection</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                       <div class="player">
+                           <h2>
+                               mf
+                           </h2>
+                           <div id="mf3Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/mf-3.svg" alt="">
+                               </div>
+                               <button onclick="mf3CloseFunction();" id="mf3Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Protection</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                       <div class="player">
+                           <h2>
+                               mf
+                           </h2>
+                           <div id="mf4Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/mf-4.svg" alt="">
+                               </div>
+                               <button onclick="mf4CloseFunction();" id="mf4Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Protection</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="grid df-div">
+                       <div class="player">
+                           <h2>
+                               DF
+                           </h2>
+                           <div id="df1Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/df-1.svg" alt="">
+                               </div>
+                               <button onclick="df1CloseFunction();" id="df1Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Defence</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                       <div class="player">
+                           <h2>
+                               DF
+                           </h2>
+                           <div id="df2Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/df-2.svg" alt="">
+                               </div>
+                               <button onclick="df2CloseFunction();" id="df2Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Defence</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                       <div class="player">
+                           <h2>
+                               DF
+                           </h2>
+                           <div id="df3Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/df-3.svg" alt="">
+                               </div>
+                               <button onclick="df3CloseFunction();" id="df3Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Defence</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                       <div class="player">
+                           <h2>
+                               DF
+                           </h2>
+                           <div id="df4Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/df-4.svg" alt="">
+                               </div>
+                               <button onclick="df4CloseFunction();" id="df4Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Defence</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="grid at-div">
+                       <div class="player">
+                           <h2>
+                               AT
+                           </h2>
+                           <div id="at1Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/at-1.svg" alt="">
+                               </div>
+                               <button onclick="at1CloseFunction();" id="at1Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Protection</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                       <div class="player">
+                           <h2>
+                               AT
+                           </h2>
+                           <div id="at2Player" class="playerView">
+                               <div class="playerImgContainer">
+                                   <img class="playerImg" src="assets/imgs/at-2.svg" alt="">
+                               </div>
+                               <button onclick="at2CloseFunction();" id="at2Close" class="playerCloseBtn">X</button>
+                               <span class="goalKeeper">Protection</span>
+                               <span class="playerName">Kane</span>
+                           </div>
+                       </div>
+                    </div>
+               </div>
+
+               <div class="sportTheeBtn">
+                  <button class="approvBtn">Vehicle approval</button>
+                  <button class="randomBtn">Random Selection</button>
+                  <button class="resetBtn">Reset</button>
+               </div>
+            </div>
+            <!-- sports table -->
+            <div class="tableHeader">
+                <h2>
+                    Dream League - Round 1
+                </h2>
+            </div>
+            <div style="overflow-x: auto;">
+                <table class="roundTable">
+                    <thead>
+                        <tr>
+                            <th>Review</th>
+                            <th>Guest Team</th>
+                            <th>Outcome</th>
+                            <th>Host Team</th>
+                            <th>Hour</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="#">For Review</a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/Leicester.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <span>---</span>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/West_Ham.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+
+                            <td>
+                                <span>--</span>
+                            </td>
+                            <td>
+                                <span>20.08.2022</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">For Review</a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/Leicester.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <span>---</span>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/West_Ham.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+
+                            <td>
+                                <span>--</span>
+                            </td>
+                            <td>
+                                <span>20.08.2022</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#">For Review</a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/Leicester.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <span>---</span>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/West_Ham.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+
+                            <td>
+                                <span>--</span>
+                            </td>
+                            <td>
+                                <span>20.08.2022</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#">For Review</a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/Leicester.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <span>---</span>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/West_Ham.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+
+                            <td>
+                                <span>--</span>
+                            </td>
+                            <td>
+                                <span>20.08.2022</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#">For Review</a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/Leicester.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <span>---</span>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/West_Ham.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+
+                            <td>
+                                <span>--</span>
+                            </td>
+                            <td>
+                                <span>20.08.2022</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#">For Review</a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/Leicester.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <span>---</span>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/West_Ham.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+
+                            <td>
+                                <span>--</span>
+                            </td>
+                            <td>
+                                <span>20.08.2022</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="#">For Review</a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/Leicester.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>
+                                <span>---</span>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <div class="imgName">
+                                        <img src="assets/imgs/West_Ham.svg" alt="team">
+                                        <span>Maccabi Netanya</span>
+                                    </div>
+                                </a>
+                            </td>
+
+                            <td>
+                                <span>--</span>
+                            </td>
+                            <td>
+                                <span>20.08.2022</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- The Premier League table content -->
+            <div class="tableHeader">
+                <h2>
+                    The Premier League table
+                </h2>
+            </div>
+            <div style="overflow-x: auto;">
+                <table class="roundTable">
+                    <thead>
+                        <tr>
+                            <th>Points</th>
+                            <th>Ratio</th>
+                            <th>Loss</th>
+                            <th>Draw</th>
+                            <th>Nach</th>
+                            <th>From</th>
+                            <th>Group</th>
+                            <th>#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>11</td>
+                        </tr>
+
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>12</td>
+                        </tr>
+
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>13</td>
+                        </tr>
+
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>14</td>
+                        </tr>
+
+                        <tr>
+                            <td>0</td>
+                            <td>0-0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="#">
+                                    Hapoel Tel Aviv
+                                </a>
+                            </td>
+                            <td>15</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+          </div>
+       </div>
+    </div>
+</section>
+
+<script src="assets/js-code/webrouk-custom-range.js"></script>
+<script src="assets/js-code/main.js"></script>
+<script>
+    const input = document.querySelector("#priceSliderInput");
+    input.addEventListener("change", (e) => console.log(e.target.value));
+  </script>
+</body>
+</html>

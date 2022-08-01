@@ -1,0 +1,631 @@
+/* base settings */
+:root{
+    --primarg-color: #3A414E;
+    --secondary-color: #2B303A;
+    --tertiary-color: #1ed760;
+    --dark-color: #262C3A;
+    --font-black-color: #000000;
+    --font-white-color: #FFFFFF;
+    --font-ash-color: #a7a7b2;
+    --box-border-radius: 10px;
+    --box-border-color: #475060;
+}
+
+/* price range slider custom color */
+webrouk-custom-range {
+    /* Expected variables from inside the component (optional) */
+    --w-primary-color: #ff4a24;;
+    --w-text-color: hsl(0, 100%, 100%);
+    --w-line-color: hsl(0, 0%, 93%);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    background-image: url("../imgs/bodyj-img.jpg");
+    width: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.page-width{
+    width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sportSectionContent{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.jus-content-left{
+    justify-content: start;
+}
+
+.jus-content-center{
+    justify-content: center;
+}
+
+.jus-content-right{
+    justify-content: end;
+}
+
+.items-left{
+   align-items: flex-start;
+}
+
+.items-center{
+    align-items: center;
+ }
+
+ .items-right{
+    align-items: flex-end;
+ }
+
+.no-of-col-1{
+    grid-template-columns: 1fr;
+}
+
+.no-of-col-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.no-of-col-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.no-of-col-4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gap-0 {
+    gap: 0;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+.gap-30{
+    gap: 30px;
+}
+
+
+
+/* main style */
+
+/* left-side-design */
+
+.timerPart{
+    border: 1px solid var(--box-border-color);
+    background-color: var(--secondary-color);
+    color: var(--font-white-color);
+    padding: 20px;
+}
+
+.timerPart #timeOut{
+    color: var(--tertiary-color);
+}
+
+#showTime {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#showTime div {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+	width: 75px;
+    height: 70px;
+}
+
+#showTime div:after {
+    position: absolute;
+    bottom: -10px;
+	left: 0;
+    width: 100%;
+    height: 30%;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--font-ash-color);
+	background: transparent;
+    display: grid;
+    place-items: center;
+}
+
+#showTime div.hours:after  {
+    content: "hours";
+}
+#showTime div.minutes:after  {
+    content: "minutes";
+}
+#showTime div.seconds:after  {
+    content: "seconds";
+}
+
+#showTime div:first-child:before{
+    content: ":";
+    position: absolute;
+    right: -13px;
+    top: 11px;
+    width: 10px;
+    height: 20px;
+}
+
+#showTime div:nth-child(2):before{
+    content: ":";
+    position: absolute;
+    right: -13px;
+    top: 11px;
+    width: 10px;
+    height: 20px;
+}
+
+.inputPart{
+    margin-top: 20px;
+}
+
+.inputPart hr{
+    margin: 20px 0px;
+    width: 100%;
+    height: 1px;
+}
+
+.inputTwoBtn{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+}
+
+.customLabel{
+    font-size: 16px;
+    color: var(--font-ash-color);
+}
+
+.inputTwoBtn button{
+ padding: 10px;
+ background-color: #ff4a24;
+ outline: none;
+ border: none;
+ color: var(--font-white-color);
+ cursor: pointer;
+ border-radius: 5px;
+}
+
+.captainSelect{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.comBtnPart h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    text-align: center;
+    color: var(--font-white-color);
+}
+
+.comPlayerBtn{
+    padding: 10px;
+    width: 100%;
+    background-color: #ff4a24;
+    outline: none;
+    border: none;
+    color: var(--font-white-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.groupTwoBtn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.groupTwoBtn select{
+   width: 100%;
+   margin-top: 10px;
+   padding: 10px;
+   background-color: var(--secondary-color);
+   color: var(--font-ash-color);
+   border: 1px solid var(--box-border-color);
+   outline: none;
+}
+
+.fiveDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.fiveDiv div{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.fiveDiv div label{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.sliderTable{
+    overflow-x: auto;
+    height: 500px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+/* right-side-design */
+.topPartInput .topInputDesign{
+    padding: 10px;
+    width: 250px;
+    background-color: transparent;
+    border: 1px solid var(--box-border-color);
+    color: var(--font-ash-color);
+    outline: none;
+}
+
+.topInputDesign::placeholder{
+    color: var(--font-ash-color);
+}
+
+
+.playerBudget{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    margin: 20px 0;
+    border: 1px solid #ff4a24;
+    padding: 20px;
+    
+}
+
+.sportTheeBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sportTheeBtn button{
+    padding: 10px 15px;
+    border: 1px solid var(--box-border-color);
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px 0 25px 0;
+}
+
+.sportTheeBtn .approvBtn{
+    background-color: #1ed760;
+    color: #000000;
+}
+
+.sportTheeBtn .randomBtn{
+    background-color: var(--primarg-color);
+    color: #fff;
+}
+
+.sportTheeBtn .resetBtn{
+ background-color: #ff4a24;
+ color: #FFFFFF;
+}
+
+.playerFiveInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    border-left: 1px solid #ff4a24;
+    margin-left: 5px;
+}
+
+.playerFiveInfo h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--font-white-color);
+}
+
+.playerFiveInfo span{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--font-ash-color);
+}
+
+.playerBudgetContent h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--font-white-color);
+}
+
+.playerBudgetContent span{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--font-ash-color);
+}
+
+.sport-inner{
+    background-color: var(--primarg-color);
+    padding: 40px 20px;
+    border-radius: var(--box-border-radius);
+    margin: 50px 0;
+}
+
+
+.sport-player-team{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border: 1px solid var(--box-border-color);
+}
+
+.sport-player-team .sport-bg{
+    background-image: url("../imgs/ground-img.png");
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 720px;
+    height: 580px;
+}
+
+.playerView {
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.sport-player-team .po-div{
+    width: 70%;
+    margin: 5% 15% 0;
+    position: relative;
+}
+
+.sport-player-team .player {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.sport-player-team .player h2{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sport-player-team .po-div{
+    grid-template-columns: 40px;
+    margin: 5% 15% 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sport-player-team .cc-div, .df-div{
+    grid-template-columns: 40px 40px 40px 40px;
+    gap: 122px;
+    margin: 11% 15% 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sport-player-team .df-div{
+    gap: 140px;
+}
+
+.sport-player-team .at-div{
+    grid-template-columns: 40px 40px;
+    gap: 122px;
+    margin: 11% 15% 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.goalKeeper{
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px 4px 0 0;
+    width: 100px;
+    background: #262c3a;
+}
+
+.playerName{
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    overflow: hidden;
+    padding: 3px 8px;
+    width: 100px;
+    border-radius: 0 0 4px 4px;
+    background: var(--tertiary-color);
+    color: #000000;
+}
+
+.playerView{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ width: 100%;
+ z-index: 1;
+ margin-top: -20px;
+}
+
+.playerImgContainer{
+    margin-bottom: -30px;
+}
+
+.playerView img{
+    height: 70px;
+}
+
+.playerCloseBtn{
+    margin-left: -77px;
+    padding: 4px 8px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #ff4a24;
+    color: #FFFFFF;
+    border: none;
+    outline: none;    
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+#poPlayer,#mf1Player,#mf2Player,#mf3Player,#mf4Player, #df1Player, #df2Player, #df3Player, #df4Player, #at1Player, #at2Player{
+    margin-top: -50px;
+}
+
+
+/* style the player table */
+.tableHeader{
+    margin-top: 20px;
+    border: 1px solid var(--box-border-color);
+    text-align: center;
+    color: var(--font-white-color);
+    background-color: var(--secondary-color);
+    padding: 15px;
+
+}
+
+.tableHeader h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.roundTable {
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--font-ash-color);
+  }
+  
+  .roundTable thead{
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+ .roundTable td, th {
+    border: 1px solid var(--box-border-color);
+    text-align: left;
+    padding: 10px;
+    color: var(--font-ash-color);
+    text-align: center;
+  }
+
+  .roundTable td a {
+    color: var(--font-ash-color);
+  }
+  
+  .roundTabletr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .roundTable img{
+    width: 30px;
+  }
+
+  .roundTable .imgName{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .roundTable tbody tr:hover{
+    background-color: var(--secondary-color);
+  }
+
+  .roundTable tbody a:hover{
+   color: var(--tertiary-color);
+  }
+
+
+  @media screen and (max-width: 992px){
+    .sportSectionContent{
+       display: grid;
+       grid-template-columns: 1fr;
+    }
+
+    .timerPart h2{
+        text-align: center;
+    }
+
+    .topPartInput{
+        margin: 20px 0;
+    }
+  }

@@ -1,0 +1,209 @@
+/* base settings */
+:root{
+    --primarg-color: #3A414E;
+    --secondary-color: #2B303A;
+    --tertiary-color: #1ed760;
+    --dark-color: #262C3A;
+    --font-black-color: #000000;
+    --font-white-color: #FFFFFF;
+    --font-ash-color: #a7a7b2;
+    --box-border-radius: 10px;
+    --box-border-color: #475060;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    background-color: var(--secondary-color);
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.subHeading{
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--font-white-color);
+}
+
+.heading{
+    font-size: 25px;
+    color: var(--font-white-color);
+}
+
+
+.inputFieldMargin{
+    margin-top: 20px;
+}
+
+.customInput{
+    background-color: transparent;
+    color: var(--font-ash-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid var(--box-border-color);
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.customLabel{
+    color: var(--font-ash-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.customBtn{
+    background-color: var(--primarg-color);
+    color: var(--font-white-color);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.passwordIconFixed{
+    display: flex;
+    align-items: center;
+}
+
+.passwordImg {
+    width: 20px;
+    margin-bottom: -3px;
+    margin-left: -40px;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.loginInnerBody{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.loginImg{
+    position: relative;
+    background-image: url("../imgs/football.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+.loginDiv{
+    padding: 30px;
+}
+
+.accessLogo{
+    margin-bottom: 70px;
+    color: var(--font-white-color);
+}
+
+.accessLogo a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--body-text-color);
+}
+
+.forgotLink {
+    margin-top: 10px;
+}
+
+
+.forgotLink a{
+    text-decoration: none;
+    color: #3CB179;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.submitBtnMargin{
+    margin-top: 60px;
+}
+
+.submitBtn{
+    width: 50%
+}
+
+@media screen and (max-width: 768px){
+    .loginInnerBody{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .customLabel{
+        font-size: 15px;
+    }
+
+    .loginDiv {
+        padding: 10px;
+    }
+
+    .loginImg{
+        width: 100%;
+        height: 20vh;
+        background-position-y: 40%;
+    }
+
+    .accessLogo {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .mobileCenter{
+        text-align: center;
+    }
+
+    .accessLogo a {
+        font-size: 25px;
+    }
+
+    .submitBtnMargin{
+        text-align: center;
+    }
+
+    .submitBtn {
+        width: 30%;
+    }
+
+    .submitBtnMargin{
+        margin-top: 20px;
+    }
+
+    
+}
